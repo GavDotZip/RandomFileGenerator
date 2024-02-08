@@ -18,3 +18,10 @@ for i in range(1, 3):
 
 # Create, Fill and Save Excel
 wb = Workbook()
+ws = wb.active
+ws.append(HEADER)
+
+for row in rows:
+    ws.append(row)
+
+wb.save('tester.xlsx')
