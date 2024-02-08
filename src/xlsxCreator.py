@@ -1,5 +1,5 @@
 import random
-import openpyxl
+from openpyxl import Workbook
 
 # Define Headers and Data to be Inputted
 HEADER = ['Name', 'Location', 'Job Title']
@@ -17,3 +17,4 @@ for i in range(1, 3):
     rows.append([i, name, location, title])
 
 # Create, Fill and Save Excel
+wb = Workbook()
