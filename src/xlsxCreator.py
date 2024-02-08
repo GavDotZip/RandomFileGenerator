@@ -9,12 +9,12 @@ TITLE = ['CEO', 'CFO', 'CTO']
 
 # Generate Rows of Pre-Defined Data
 rows = []
-for i in range(1, 3):
-    print(i)
+for i in range(1, 4):
+    # print(i)
     name = random.choice(NAME)
     location = random.choice(LOCATION)
     title = random.choice(TITLE)
-    rows.append([i, name, location, title])
+    rows.append([name, location, title])
 
 # Create, Fill and Save Excel
 wb = Workbook()
