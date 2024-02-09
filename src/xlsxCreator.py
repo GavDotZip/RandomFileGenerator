@@ -2,7 +2,7 @@ import random
 from openpyxl import Workbook
 
 # Define Headers and Data to be Inputted
-HEADER = ['Name', 'Location', 'Job Title']
+HEADER = ['Employee Number', 'Name', 'Job Title', 'Department', 'Location', 'Salary (€)', 'Degree']
 NAME = ['Mark Corrigan', 'Alan Johnson', 'Sophie Chapman']
 LOCATION = ['London', 'Aberdeen', 'Frankfurt']
 TITLE = ['CEO', 'CFO', 'CTO']
@@ -28,4 +28,4 @@ for row in rows:
     ws.append(row)
 
 # Save the Excel file
-wb.save('tester.xlsx')
+wb.save('ConsultioConsultious.xlsx')
